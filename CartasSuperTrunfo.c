@@ -2,7 +2,7 @@
 
 int main(){
     
-//declarei as variáveis
+//declaração das variáveis da carta 1
     
     char estado;
     char codigo_da_carta[50], nome_da_cidade[50];
@@ -37,6 +37,8 @@ int main(){
     printf("Numeros de pontos turisticos:\n");
     scanf(" %d", &qnt_ponto_turistico);
 
+//Mensagem de instrução para o usuário
+    
     printf("Carta 1 registrada!!\n\nAgora vamos registrar a carta 2\n\n");
 
 //Declaração das variáveis da carta 2
