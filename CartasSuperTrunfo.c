@@ -7,7 +7,13 @@ int main(){
     char estado;
     char codigo_da_carta[50], nome_da_cidade[50];
     int populacao, qnt_ponto_turistico;
-    float area, pib;
+    float area, pib, densidade_pop, pib_per_cap;
+
+//Cálculo da densidade populacional e do pib per capita da carta 1
+
+    densidade_pop = (float) populacao/area;
+
+    pib_per_cap = (float) pib/populacao;
 
 //Mensagem de instrução para o usuário
     
@@ -46,7 +52,13 @@ int main(){
     char estado2;
     char codigo_da_carta2[5], nome_da_cidade2[5];
     int populacao2, qnt_ponto_turistico2;
-    float area2, pib2;
+    float area2, pib2, densidade_pop2, pib_per_cap2;
+
+//Cálculo da densidade populacional e do pib per capita da carta 2
+
+    densidade_pop2 = (float) populacao2/area2;
+
+    pib_per_cap2 = (float) pib2/populacao2;
 
 //Registro da carta 2
     
@@ -81,5 +93,5 @@ int main(){
     
     printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n", estado2, codigo_da_carta2, nome_da_cidade2, populacao2, area2, pib2, qnt_ponto_turistico2);
 
-    return 0
+    return 0;
 }
