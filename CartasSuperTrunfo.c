@@ -87,11 +87,11 @@ int main(){
    
     printf("\nCarta 2 registrada com sucesso!\nEssas sao suas cartas!\nCarta1\n\n");
 
-    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n\n", estado, codigo_da_carta, nome_da_cidade, populacao, area, pib, qnt_ponto_turistico);
+    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %f\n PIB Per Capita: %f\n", estado, codigo_da_carta, nome_da_cidade, populacao, area, pib, qnt_ponto_turistico, densidade_pop, pib_per_cap);
     
     printf("Carta 2\n\n");
     
-    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n", estado2, codigo_da_carta2, nome_da_cidade2, populacao2, area2, pib2, qnt_ponto_turistico2);
+    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %f\n PIB Per Capita: %f\n", estado2, codigo_da_carta2, nome_da_cidade2, populacao2, area2, pib2, qnt_ponto_turistico2, densidade_pop2, pib_per_cap2);
 
     return 0;
 }
