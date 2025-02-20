@@ -9,11 +9,7 @@ int main(){
     int populacao, qnt_ponto_turistico;
     float area, pib, densidade_pop, pib_per_cap;
 
-//Cálculo da densidade populacional e do pib per capita da carta 1
 
-    densidade_pop = (float) populacao/area;
-
-    pib_per_cap = (float) pib/populacao;
 
 //Mensagem de instrução para o usuário
     
@@ -43,6 +39,12 @@ int main(){
     printf("Numeros de pontos turisticos:\n");
     scanf(" %d", &qnt_ponto_turistico);
 
+//Cálculo da densidade populacional e do pib per capita da carta 1
+
+    densidade_pop = (float) populacao/area;
+
+    pib_per_cap = (float) pib/populacao;
+
 //Mensagem de instrução para o usuário
     
     printf("Carta 1 registrada!!\n\nAgora vamos registrar a carta 2\n\n");
@@ -54,11 +56,7 @@ int main(){
     int populacao2, qnt_ponto_turistico2;
     float area2, pib2, densidade_pop2, pib_per_cap2;
 
-//Cálculo da densidade populacional e do pib per capita da carta 2
 
-    densidade_pop2 = (float) populacao2/area2;
-
-    pib_per_cap2 = (float) pib2/populacao2;
 
 //Registro da carta 2
     
@@ -82,6 +80,12 @@ int main(){
 
     printf("Numeros de pontos turisticos:\n");
     scanf(" %d", &qnt_ponto_turistico2);
+
+//Cálculo da densidade populacional e do pib per capita da carta 2
+
+    densidade_pop2 = (float) populacao2/area2;
+
+    pib_per_cap2 = (float) pib2/populacao2;
   
 //Exibição dos dados fornecidos pelo usuário
    
