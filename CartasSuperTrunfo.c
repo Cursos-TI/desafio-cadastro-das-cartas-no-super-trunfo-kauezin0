@@ -7,9 +7,7 @@ int main(){
     char estado;
     char codigo_da_carta[50], nome_da_cidade[50];
     int populacao, qnt_ponto_turistico;
-    float area, pib, densidade_pop, pib_per_cap;
-
-
+    float area, pib, densidade_pop, pib_per_cap, super;
 
 //Mensagem de instrução para o usuário
     
@@ -19,7 +17,7 @@ int main(){
 //Registro da primeira carta
     
     printf("Estado (Uma letra de 'A' a 'H', representando um dos oito estados):\n");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
 
     printf("Codigo da carta:\n");
     scanf(" %s", &codigo_da_carta);
@@ -45,6 +43,10 @@ int main(){
 
     pib_per_cap = (float) pib/populacao;
 
+// Cálculo do super poder
+
+    super = (float) populacao + qnt_ponto_turistico + area + pib + densidade_pop + pib_per_cap;
+
 //Mensagem de instrução para o usuário
     
     printf("Carta 1 registrada!!\n\nAgora vamos registrar a carta 2\n\n");
@@ -52,7 +54,7 @@ int main(){
 //Declaração das variáveis da carta 2
     
     char estado2;
-    char codigo_da_carta2[5], nome_da_cidade2[5];
+    char codigo_da_carta2[50], nome_da_cidade2[50];
     int populacao2, qnt_ponto_turistico2;
     float area2, pib2, densidade_pop2, pib_per_cap2;
 
@@ -86,16 +88,20 @@ int main(){
     densidade_pop2 = (float) populacao2/area2;
 
     pib_per_cap2 = (float) pib2/populacao2;
+
+// Cálculo do super poder
+
+    super = (float) populacao + qnt_ponto_turistico + area + pib + densidade_pop + pib_per_cap;
   
 //Exibição dos dados fornecidos pelo usuário
    
     printf("\nCarta 2 registrada com sucesso!\nEssas sao suas cartas!\nCarta1\n\n");
 
-    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %f\n PIB Per Capita: %f\n", estado, codigo_da_carta, nome_da_cidade, populacao, area, pib, qnt_ponto_turistico, densidade_pop, pib_per_cap);
+    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %.2fkm\n PIB: %.2f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %.2f\n PIB Per Capita: %.2f\n Super Poder: %.3f\n", estado, codigo_da_carta, nome_da_cidade, populacao, area, pib, qnt_ponto_turistico, densidade_pop, pib_per_cap, super);
     
     printf("Carta 2\n\n");
     
-    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %fkm\n PIB: %f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %f\n PIB Per Capita: %f\n", estado2, codigo_da_carta2, nome_da_cidade2, populacao2, area2, pib2, qnt_ponto_turistico2, densidade_pop2, pib_per_cap2);
+    printf(" Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n Populacao: %d\n Area: %.2fkm\n PIB: %.2f\n Numeros de pontos turisticos: %d\n Densidade Populacional: %.2f\n PIB Per Capita: %.2f\n Super Poder: %.3f\n", estado2, codigo_da_carta2, nome_da_cidade2, populacao2, area2, pib2, qnt_ponto_turistico2, densidade_pop2, pib_per_cap2, super);
 
     return 0;
 }
